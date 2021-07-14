@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/master.css">
+    <meta charset="utf-8">
+    <title>Invoice Generator</title>
+  </head>
+  <body>
+    <h3>Welcome to online invoice generator</h3>
+    <div class="container">
+      <form action="index.html" method="post">
+
+        <div class="form-group">
+          <!-- <label for="company">Company</label> -->
+          <select class="form-control" name="company" id="company">
+            <option value="select">Select Company Name</option>
+            <option value="sastha">Sri Sastha Electronics</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <!-- <label for="buyer">Buyer</label> -->
+          <input list="buyers" class="form-control" name="buyers" id="buyers" placeholder="Select Buyer Name">
+          <datalist id="buyers" >
+            <option value="Anangoor Textile Mills(P) Ltd Unit-II">Anangoor Textile Mills(P) Ltd Unit-II</option>
+            <option value="Br. Sheshrao Wankhede Shetkari Sahakari Soot Gimi">Br. Sheshrao Wankhede Shetkari Sahakari Soot Gimi</option>
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" name="invoice_no" id="invoice_no" placeholder="Invoice Number">
+        </div>
+
+        <div class="form-group">
+          <label for="invoicedt">Invoice Date</label>
+          <input type="date" class="form-control" name="invoicedt" id="invoicedt">
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" name="deliverynote" id="deliverynote" rows="1" placeholder="Delivery Note"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" name="modeofpayment" id="modeofpayment" placeholder="Mode of Payment">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" name="supplierrefno" id="supplierrefno" placeholder="Supplier's Reference No">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" name="otherrefno" id="otherrefno" placeholder="Other References">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" name="buyerorderno" id="buyerorderno" placeholder="Buyer's Order No">
+        </div>
+
+        <div class="form-group">
+          <label for="buyerorderdt">Buyer's Order Date</label>
+          <input type="date" class="form-control" name="buyerorderdt" id="buyerorderdt">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" name="dispatchdocno" id="dispatchdocno" placeholder="Dispatch Document No">
+        </div>
+
+        <div class="form-group">
+          <label for="deliverynotedt">Delivery Note Date</label>
+          <input type="date" class="form-control" name="deliverynotedt" id="deliverynotedt">
+        </div>
+
+        <div class="form-group">
+          <input list="couriers" class="form-control" name="courier" id="courier" placeholder="Dispatched through">
+          <datalist id="couriers" >
+            <option value="Professional Courier">Professional Courier</option>
+            <option value="DTDC courier">DTDC courier</option>
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" name="distination" id="distination" placeholder="Distination">
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" name="termsofdelivery" id="termsofdelivery" rows="1" placeholder="Terms of Delivery"></textarea>
+        </div>
+
+      </form>
+    </div>
+
+  </body>
+</html>
